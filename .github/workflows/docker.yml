@@ -27,5 +27,5 @@ jobs:
             username: ${{ secrets.AZURE_CLIENT_ID }}
             password: ${{ secrets.AZURE_CLIENT_SECRET }}
         - run: |
-            docker build -f Dockerfile . -t ${{ secrets.AZURE_ACR }}/mathapp:${{ github.sha }}
-            docker push ${{ secrets.AZURE_ACR }}/mathapp:${{ github.sha }}
+            docker build -f Dockerfile . -t ${{ secrets.AZURE_ACR }}/mathapp:latest
+            docker push ${{ secrets.AZURE_ACR }}/mathapp:latest
