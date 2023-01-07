@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = '1111'
 
 @app.route('/', methods = ['GET','POST'])
 def hello():
-    return 'hello api2 works'
+    return 'hello api works hello'
 
 @app.route('/multiple', methods = ['GET','POST'])
 
