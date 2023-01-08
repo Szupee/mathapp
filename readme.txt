@@ -1,3 +1,5 @@
+https://jolly-mud-0ccb18c10.2.azurestaticapps.net
+
 Hello,
 
 This is a very rudimental and overenginered calculator. 
@@ -36,3 +38,8 @@ The /add and /subtract need an URL rewrite to call the Azure Functions.
 
 Other:
 Error.html added to the static website and used in APP Gateway in case the backend not running
+
+
+FUTURE UPDATE:
+Implement HTTPS
+Set up own Domain name
