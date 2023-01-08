@@ -5,4 +5,4 @@ RUN apt-get -y install git
 RUN git clone https://github.com/Szupee/mathapp.git
 RUN pip3 install flask
 
-CMD ["python3" , "mathapp/add.py"]
+CMD ["python3" , "mathapp/backend-2.py"]
