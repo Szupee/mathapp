@@ -1,4 +1,4 @@
-<form action="http://51.104.220.206/" method="get">
+<form id="mathform" onsubmit="yourFunction()" method="get">
     <label for="number1">num1</label>
 
     <select name="n1" id="n1">
@@ -16,7 +16,7 @@
 
     <label for="operation">operation</label>
 
-    <select name="op" id="op">
+    <select name="op" id="op" name="op">
     <option value="add">+</option>
     <option value="subtract">-</option>
     <option value="divide">/</option>
@@ -37,5 +37,13 @@
         <option value="8">8</option>
         <option value="9">9</option>
     </select>
-    <input type="submit" value="sumi">
+    <input type="submit" value="submit">
 </form>
+
+<script>
+    function yourFunction(){
+        var action_src = "http://51.104.220.206/" + document.getElementsByName("op")[0].value;
+        var your_form = document.getElementById('mathform');
+        your_form.action = action_src ;
+    }
+    </script>

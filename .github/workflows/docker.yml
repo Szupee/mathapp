@@ -1,5 +1,5 @@
 on: [workflow_dispatch]
-name: Linux_Container_frontend
+name: Create math app
 
 permissions:
       id-token: write
